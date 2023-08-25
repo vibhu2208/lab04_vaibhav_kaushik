@@ -9,12 +9,12 @@ flight_table = [
 
 def sort_flight_table(parameter):
     if parameter == 1:
-        return sorted(flight_table, key=lambda x: x[0])  # Sort by P_ID
+        return sorted(flight_table, key=lambda x: x[0])  
     elif parameter == 2:
-        return sorted(flight_table, key=lambda x: x[2])  # Sort by Start Time
+        return sorted(flight_table, key=lambda x: x[2]) 
     elif parameter == 3:
         priority_order = {"High": 3, "MID": 2, "Low": 1}
-        return sorted(flight_table, key=lambda x: priority_order[x[3]])  # Sort by Priority
+        return sorted(flight_table, key=lambda x: priority_order[x[3]])  
 
 def main():
     print("Flight Table Sorting Options:")
